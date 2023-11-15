@@ -12,13 +12,9 @@ const app = createApp({
         }
     },    
 
-    created(){
-        // all'avvio della pagina
-
-    },
-
     methods: {
-        // funzioni
-          
-    },
+        cancel: function(index) {
+            this.todo.splice(index, 1);        
+      }
+    }
 }).mount("#app");

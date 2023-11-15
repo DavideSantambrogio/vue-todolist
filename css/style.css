@@ -1,4 +1,12 @@
 .my-container{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
+
+.cancel {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    
+}
+
