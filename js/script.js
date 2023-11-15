@@ -4,7 +4,11 @@ const app = createApp({
     data () {
         // dati
         return{
-
+            todo:[
+                "Spesa",
+                "Palestra",
+                "Dentista",
+            ],
         }
     },    
 

@@ -15,7 +15,14 @@
 </head>
 <body>
     <div id="app">
-
+        <div class="my-container mt-5">
+            <ul class="list-group">
+                <li class="list-group-item" v-for="(item, index) in todo">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                <label class="form-check-label" for="firstCheckbox">{{ item }}</label>
+                </li>
+            </ul>
+        </div>    
 
 
     </div>
