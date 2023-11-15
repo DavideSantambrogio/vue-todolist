@@ -18,9 +18,9 @@
         <div class="my-container mt-5">
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-              </div>
+                <input type="text" class="form-control" placeholder="Aggiungi alla lista" aria-label="Aggiungi alla lista" aria-describedby="button-addon2" v-model="newTodo">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTodo">Aggiungi</button>
+            </div>
 
             <ul class="list-group">                
                 <li class="list-group-item d-flex " v-for="(item, index) in todo">
@@ -29,8 +29,7 @@
                         <label class="form-check-label" for="firstCheckbox">{{ item }}</label>
                     </div>
                 
-                    <button class="btn btn-outline-secondary ms-auto"><i class="fa-solid fa-xmark"
-                        @click="cancel"></i></button>
+                    <button class="btn btn-outline-secondary ms-auto "@click="cancel(index)"><i class="fa-solid fa-xmark"></i></button>
                 </li>
             </ul>
         </div>    

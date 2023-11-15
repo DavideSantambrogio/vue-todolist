@@ -5,16 +5,21 @@ const app = createApp({
         // dati
         return{
             todo:[
-                "Spesa",
-                "Palestra",
-                "Dentista",
+                "Fare la spesa",
+                "Andare in palestra",
+                "Chiamare il dentista",
             ],
+            newTodo:"",
         }
     },    
 
     methods: {
         cancel: function(index) {
             this.todo.splice(index, 1);        
-      }
+      },
+        addTodo() {
+            this.todo.push(this.newTodo);
+            this.newTodo = '';
+        }
     }
 }).mount("#app");
