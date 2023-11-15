@@ -18,7 +18,7 @@
         <div class="my-container mt-5">
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Aggiungi alla lista" aria-label="Aggiungi alla lista" aria-describedby="button-addon2" v-model="newTodo">
+                <input type="text" class="form-control" placeholder="Aggiungi alla lista" aria-label="Aggiungi alla lista" aria-describedby="button-addon2" v-model="newTodo" v-on:keyup.enter="addTodo">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTodo">Aggiungi</button>
             </div>
 
