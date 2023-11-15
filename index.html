@@ -16,6 +16,12 @@
 <body>
     <div id="app">
         <div class="my-container mt-5">
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+              </div>
+
             <ul class="list-group">                
                 <li class="list-group-item d-flex " v-for="(item, index) in todo">
                     <div>
@@ -23,7 +29,7 @@
                         <label class="form-check-label" for="firstCheckbox">{{ item }}</label>
                     </div>
                 
-                    <button class="cancel ms-auto"><i class="fa-solid fa-xmark"
+                    <button class="btn btn-outline-secondary ms-auto"><i class="fa-solid fa-xmark"
                         @click="cancel"></i></button>
                 </li>
             </ul>
